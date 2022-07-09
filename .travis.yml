@@ -18,7 +18,7 @@ script:
   - docker build -f udagram-api-feed/Dockerfile -t  thathardwareguy/udagram-api-feed:v1 udagram-api-feed
   - docker build -f udagram-api-user/Dockerfile -t  thathardwareguy/udagram-api-user:v1 udagram-api-user
   - docker build -f udagram-frontend/Dockerfile -t  thathardwareguy/udagram-frontend:v1 udagram-frontend
-  - docker build -f reverseproxy/Dockerfile -t  thathardwareguy/reverseproxy:v1 reverseproxy
+  - docker build -f udagram-reverseproxy/Dockerfile -t  thathardwareguy/udagram-reverseproxy:v1 udagram-reverseproxy
 
 
 after_success:
@@ -26,4 +26,4 @@ after_success:
   - docker push thathardwareguy/udagram-api-feed:v1
   - docker push thathardwareguy/udagram-api-user:v1
   - docker push thathardwareguy/udagram-frontend:v1
-  - docker push thathardwareguy/reverseproxy:v1
+  - docker push thathardwareguy/udagram-reverseproxy:v1
