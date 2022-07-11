@@ -1,0 +1,4 @@
+#ignore deployment files
+k8s
+#ignore local env file
+/set_env.sh
